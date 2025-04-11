@@ -1,0 +1,7 @@
+// PopulationChart.h
+#ifndef POPULATIONCHART_H
+#define POPULATIONCHART_H
+
+void displayPopulationChart();
+
+#endif
