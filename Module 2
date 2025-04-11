@@ -1,0 +1,22 @@
+// PopulationChart.cpp
+#include <iostream>
+#include <vector>
+#include "PopulationChart.h"
+
+using namespace std;
+
+void displayPopulationChart() {
+    vector<int> populations = {2000, 4000, 5000, 9000, 14000, 18000};
+    int years[] = {1900, 1920, 1940, 1960, 1980, 2000};
+
+    cout << "\nPRAIRIEVILLE POPULATION GROWTH" << endl;
+    cout << "(Each * represents 1,000 people)\n" << endl;
+
+    for (int i = 0; i < populations.size(); ++i) {
+        cout << years[i] << ": ";
+        for (int j = 0; j < populations[i] / 1000; ++j) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
